@@ -10,7 +10,7 @@ class Header {
 
     this.loginButton = new Element('.header-auth__signin');
     this.loggedInUserName = new Element('.header-controls .user-info__name');
-    this.userInfoArrow = new Element('.header-controls .user-info__arrow');
+    this.userInfoArrow = new Element('.header-controls .user-info__arrow .arrow');
 
     this.userInfoDropMenu = new Element('.header-controls .dropdown-menu');
     this.userInfoDropElements = new Collection('.header-controls .dropdown-item a');

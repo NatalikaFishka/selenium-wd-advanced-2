@@ -32,12 +32,12 @@ class BasePage {
 
   waitForUrl(url) {
     return browser.wait(EC.urlIs(url), 5000);
-  }
+  };
 
   async scrollToElement(element) {
     const { y } = await element.getLocation();
     return browser.executeScript('window.scrollTo(0,arguments[0]);', y);
-  }
+  };
 
   setSessionStorage(key, value) {
     return browser.executeScript(`window.sessionStorage.setItem('${key}', ${value});`);
@@ -45,15 +45,11 @@ class BasePage {
 
   addCookie(key, value) {
     return browser.manage().addCookie({ name: key, value: value });
-  }
+  };
 
   getCookie(key) {
     return browser.manage().getCookie(key);
-  }
-
-  refresh() {
-    return browser.navigate().refresh();
-  }
+  };
 };
 
 module.exports = BasePage;

@@ -99,7 +99,7 @@ describe('Test various UX scenarios of training.by', () => {
     await PageFactory.getPage('Home').open();
     await PageFactory.getPage('Home').addCookie(constants.LOGIN_TOKEN_KEY, constants.LOGIN_TOKEN_VALUE);
     await PageFactory.getPage('Home').addCookie(constants.LOGIN_STATUS_KEY, constants.LOGIN_STATUS_VALUE);
-    await PageFactory.getPage('Home').refresh();
+    await PageFactory.getPage('Home').open();
     await PageFactory.getPage('Home').Header.userInfoArrow.click();
     await PageFactory.getPage('Home').Header.userInfoDropMenu.waitToDisplay();
     await PageFactory.getPage('Home').Header.userInfoDropElements.clickElementByText(constants.LOGOUT_OPTION_TEXT);

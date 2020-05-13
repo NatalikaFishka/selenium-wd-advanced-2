@@ -1,5 +1,3 @@
-const EC = protractor.ExpectedConditions;
-
 class Collection {
   constructor(selector) {
     this.collection = element.all(by.css(selector));

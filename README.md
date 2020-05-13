@@ -1,9 +1,14 @@
 ### Install all dependencies
 npm i
 
-### Run Selenium Standalone server
-npm run server
-npm run server.start
+### Run Selenium Hub
+npm run start.hub
 
-### Run webdriver.js file
+#### Run Node 1 - Chrome only
+npm run start.node1
+
+#### Run Node 2 - Edge only
+npm run start.node2
+
+### Run e2e tests
 npm run test

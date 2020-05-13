@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
+    "start.hub": "java -jar selenium-server-standalone-3.141.59.jar -role hub",
+    "start.node1": "java -Dwebdriver.chrome.driver='./webdrivers/chromedriver.exe' -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -nodeConfig nodes_configs/node_1.json",
+    "start.node2": "java -Dwebdriver.edge.driver='./webdrivers/msedgedriver.exe' -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -nodeConfig nodes_configs/node_2.json",
     "test": "protractor protractor.config.js"
   },
   "keywords": [

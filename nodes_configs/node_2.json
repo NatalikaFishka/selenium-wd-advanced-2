@@ -4,7 +4,10 @@
       "browserName": "MicrosoftEdge",
       "platform": "WIN10",
       "maxInstances": 1,
-      "seleniumProtocol": "WebDriver"
+      "seleniumProtocol": "WebDriver",
+      "goog:chromeOptions": {
+        "w3c": false
+      }
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",

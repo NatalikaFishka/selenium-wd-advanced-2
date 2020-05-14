@@ -2,6 +2,7 @@ module.exports = Object({
   DEFAULT_TARGET_URL: 'https://training.by/#!/Home?lang=ru',
   TRAINING_LIST_LINK_TEXT_RU: 'СПИСОК ТРЕНИНГОВ',
   TRAINING_LIST_LINK_RU: 'https://training.by/#!/TrainingList?lang=ru',
+  DEVOPS_TRAINING_PAGE: 'https://training.by/#!/Training/2505?lang=ru',
 
   RUSSIAN_HOME_PAGE_URL: 'https://training.by/#!/Home?lang=ru',
   ENGLISH_HOME_PAGE_URL: 'https://training.by/#!/Home?lang=en',
@@ -28,4 +29,12 @@ module.exports = Object({
   LOGIN_STATUS_VALUE: 'true',
 
   LOGOUT_OPTION_TEXT: 'Выйти',
+  CARD_NAME: "DEVOPS",
+  PIXELS: 250,
+  HIGHLIGHTER_YELLOW: 'rgba(255, 255, 0, 1)',
+  HIGHLIGHTER_RED: 'rgba(255, 0, 0, 1)',
+
+  WRONG_LOGIN: ['i', 'o', 'j', 'o', 'i', 'j', '@', 's', 'd', 'f', '.', 'j', 'i'],
+  WRONG_PASSWORD: ['o', 'i', 'd', 'j', 'f', 'i', 'j', 'd', 'f', 'o', 's'],
+  AUTH_ERROR_TEXT: 'Ошибка авторизации. Пожалуйста, попробуйте еще раз.'
 });

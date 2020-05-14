@@ -15,10 +15,16 @@ exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   multiCapabilities: [
     {
-      "browserName": "MicrosoftEdge"
+      "browserName": "MicrosoftEdge",
+      "ms:edgeOptions": {
+        "w3c": false
+      }
     },
     {
-      "browserName": "chrome"
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+        "w3c": false
+      }
     }
   ],
 }

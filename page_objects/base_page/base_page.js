@@ -50,6 +50,10 @@ class BasePage {
   getCookie(key) {
     return browser.manage().getCookie(key);
   };
+
+  openDevConsole() {
+    return browser.actions().sendKeys(protractor.Key.F12).perform();
+  }
 };
 
 module.exports = BasePage;

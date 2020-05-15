@@ -41,11 +41,11 @@ describe('Test with "Actions" and "Executer" features on training.by', () => {
     expect(currentURL).toEqual(constants.DEVOPS_TRAINING_PAGE);
   });
 
-  fit('Try to login with invalid data and see the error message', async () => {
+  it('Try to login with invalid data and see the error message', async () => {
     await browser.get(constants.DEFAULT_TARGET_URL);
     const logInButton = await browser.executeScript('return document.querySelector(".header-auth__signin")');
     await browser.driver.actions().mouseMove(logInButton).click().perform();
-    await browser.wait(async () => await browser.executeScript('return document.querySelector("#signInEmail")'), 6000);
+    browser.sleep(1000);
 
     const emailField = await browser.executeScript('return document.querySelector("#signInEmail")');
     const emailFieldBackColor = await emailField.getCssValue('backgroundColor');
@@ -71,7 +71,6 @@ describe('Test with "Actions" and "Executer" features on training.by', () => {
     await browser.executeScript(`arguments[0].style.backgroundColor = "${emailFieldBackColor}"`, emailField);
     await browser.executeScript(`arguments[0].style.backgroundColor = "${passwordFieldBackColor}"`, passwordField);
     await browser.executeScript(`arguments[0].style.backgroundColor = "${loginButtonBackColor}"`, loginButton);
-    console.log("errorText", errorText)
     expect(errorText).toEqual(constants.AUTH_ERROR_TEXT);
   })
 })

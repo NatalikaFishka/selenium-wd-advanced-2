@@ -2,7 +2,7 @@ module.exports = Object({
   DEFAULT_TARGET_URL: 'https://training.by/#!/Home?lang=ru',
   TRAINING_LIST_LINK_TEXT_RU: 'СПИСОК ТРЕНИНГОВ',
   TRAINING_LIST_LINK_RU: 'https://training.by/#!/TrainingList?lang=ru',
-  DEVOPS_TRAINING_PAGE: 'https://training.by/#!/Training/2505?lang=ru',
+  DEVOPS_TRAINING_PAGE: 'https://training.by/#!/Training/2430?lang=ru',
 
   RUSSIAN_HOME_PAGE_URL: 'https://training.by/#!/Home?lang=ru',
   ENGLISH_HOME_PAGE_URL: 'https://training.by/#!/Home?lang=en',
@@ -29,7 +29,7 @@ module.exports = Object({
   LOGIN_STATUS_VALUE: 'true',
 
   LOGOUT_OPTION_TEXT: 'Выйти',
-  CARD_NAME: "DEVOPS",
+  CARD_NAME: "JAVA WEB DEVELOPMENT",
   PIXELS: 250,
   HIGHLIGHTER_YELLOW: 'rgba(255, 255, 0, 1)',
   HIGHLIGHTER_RED: 'rgba(255, 0, 0, 1)',
